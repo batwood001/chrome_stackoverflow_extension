@@ -8,6 +8,7 @@ $('head').append($('<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css
 // 	}
 // })
 // 
+
 $('.sidebarbutton').hover(function() {
     $( this ).css( "background-color", "#ff8700" );
   }, function() {
@@ -26,8 +27,11 @@ $('.sidebarbutton').css({
 	"text-decoration": "none"})
 
 
-var toggled = false
-$('.sidebarbutton').append($('<i class="fa fa-caret-down"></i>'));
+var toggled = true
+
+$('#sidebar').hide();
+$('#mainbar').css({marginLeft: "12%"});
+
 
 $(".sidebarbutton").on("click", function(e){
 	e.preventDefault();
